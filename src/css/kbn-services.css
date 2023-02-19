@@ -1,0 +1,257 @@
+
+
+.kbn-services {
+    padding: 40px 20px;
+}
+
+.kbn-services .kbn-services-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.kbn-services .kbn-services-box .kbn-service {
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 320px;
+    height: 240px;
+    padding: 80px;
+    border-radius: 20px;
+}
+
+.kbn-services .kbn-services-box .kbn-service i {
+    color: var(--accent-color);
+    font-size: var(--x-large-font-size);
+}
+
+.kbn-services .kbn-services-box .kbn-service h1 {
+    color: var(--font-color);
+    font-weight: var(--bolder-font-weight);
+    font-family: var(--font-family);
+    font-size: var(--large-font-size);
+    padding-top: 10px;
+}
+
+.kbn-services .kbn-services-box .kbn-service .kbn-service-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+}
+
+.kbn-services .kbn-services-box .kbn-service .kbn-service-skills span {
+    color: var(--hover-font-color);
+    background-color: var(--secondary-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--bold-font-weight);
+    font-family: var(--font-family);
+    padding: 4px;
+    border-radius: 10px;
+    width: 50px;
+}
+
+/* Skills */
+.kbn-services .kbn-skills-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+}
+
+.kbn-services .kbn-skills-box .kbn-skill {
+    width: 160px;
+    height: 180px;
+    padding: 40px 40px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: var(--font-color);
+    text-align: center;
+}
+.kbn-services .kbn-skills-box .kbn-skill i {
+    color: var(--accent-color);
+    font-size: var(--larger-font-size);
+    padding-bottom: 10px;
+}
+
+.kbn-services .kbn-skills-box .kbn-skill h3 {
+    color: var(--hover-font-color);
+    background-color: var(--secondary-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--bold-font-weight);
+    font-family: var(--font-family);
+    padding: 4px;
+    border-radius: 10px;
+    width: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.kbn-services .kbn-skills-box .kbn-skill h1 {
+    color: var(--font-color);
+    font-weight: var(--bolder-font-weight);
+    font-family: var(--font-family);
+    font-size: var(--large-font-size);
+    padding-top: 10px;
+}
+
+/* 
+ ********************************************************************
+ * Responsiveness
+ ********************************************************************
+ */
+
+/* Smaller Screen */
+@media screen and (min-width: 240px) and (max-width: 380px) {
+
+    /* Responsive Services */
+    .kbn-services {
+        padding: 20px 20px;
+    }
+
+    .kbn-services .kbn-services-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        justify-items: center;
+        align-items: center;
+        padding: 40px 40px;
+    }
+
+    .kbn-services .kbn-services-box .kbn-service {
+        width: 180px;
+        height: 160px;
+        padding: 40px;
+    }
+
+    /* Responsive Skills */
+    .kbn-services .kbn-skills-box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .kbn-services .kbn-skills-box .kbn-skill {
+        width: 120px;
+        height: 160px;
+        padding: 40px 20px;
+    }
+}
+
+/* Mobile Phone */
+@media screen and (min-width: 380px) and (max-width: 580px) {
+
+    /* Responsive Services */
+    .kbn-services {
+        padding: 20px 20px;
+    }
+
+    .kbn-services .kbn-services-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        justify-items: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .kbn-services .kbn-services-box .kbn-service {
+        width: 200px;
+        height: 180px;
+        padding: 40px;
+    }
+
+    /* Responsive Skills */
+    .kbn-services .kbn-skills-box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .kbn-services .kbn-skills-box .kbn-skill {
+        width: 140px;
+        height: 180px;
+        padding: 40px 20px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 580px) and (max-width: 780px) {
+
+    /* Responsive Services */
+    .kbn-services {
+        padding: 20px 20px;
+    }
+
+    .kbn-services .kbn-services-box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1;
+        justify-items: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .kbn-services .kbn-services-box .kbn-service {
+        width: 240px;
+        height: 200px;
+        padding: 40px;
+    }
+
+    /* Responsive Skills */
+    .kbn-services .kbn-skills-box {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .kbn-services .kbn-skills-box .kbn-skill {
+        width: 160px;
+        height: 180px;
+        padding: 40px 40px;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 980px)  {
+    /* Responsive Services */
+    .kbn-services {
+        padding: 20px 20px;
+    }
+
+    .kbn-services .kbn-services-box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1;
+        justify-items: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .kbn-services .kbn-services-box .kbn-service {
+        width: 300px;
+        height: 200px;
+        padding: 40px;
+    }
+
+    /* Responsive Skills */
+    .kbn-services .kbn-skills-box {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .kbn-services .kbn-skills-box .kbn-skill {
+        width: 180px;
+        height: 180px;
+        padding: 40px 40px;
+    }
+}

@@ -1,0 +1,274 @@
+
+.kbn-home {
+    width: 100%;
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Welcome */
+.kbn-home .kbn-welcome {
+    text-align: left;
+    padding: 70px;
+}
+
+.kbn-home .kbn-welcome h1 {
+    color: var(--font-color);
+    font-size: 5rem;
+    font-weight: var(--bolder-font-weight);
+    font-family: var(--font-family);
+}
+
+.kbn-home .kbn-welcome h1 span {
+    color: var(--accent-color);
+}
+
+.kbn-home .kbn-welcome h4 {
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: var(--bold-font-weight);
+    padding-bottom: 20px;
+}
+
+.kbn-home .kbn-welcome .kbn-link-btn {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: var(--large-font-size);
+    font-weight: var(--bold-font-weight);
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    padding: 10px 8px;
+    border-radius: 10px;
+    margin: 0;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.kbn-home .kbn-welcome .kbn-link-btn i {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.kbn-home .kbn-welcome .kbn-link-btn:hover {
+    background-color: var(--hover-secondary-color);
+}
+
+.kbn-home .kbn-welcome .kbn-link-btn:hover i {
+    opacity: 1;
+    transition-duration: 0.3s;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+/* Banner */
+.kbn-home .kbn-banner {
+    padding: 80px;
+    text-align: center;
+}
+
+.kbn-home .kbn-banner img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Responsive */
+@media screen and (min-width: 240px) and (max-width: 380px) {
+    .kbn-home {
+        grid-template-rows: 2;
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .kbn-home .kbn-welcome {
+        padding: 20px;
+        grid-column: 1fr;
+        grid-row: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .kbn-home .kbn-welcome h1 {
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+
+    .kbn-home .kbn-welcome h4 {
+        font-size: 1rem;
+        padding-bottom: 16px;
+    }
+
+    .kbn-home .kbn-banner {
+        text-align: center;
+        padding: 20px;
+        grid-column: 1fr;
+        grid-row: 1;
+    }
+
+    .kbn-home .kbn-banner img {
+        text-align: center;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 580px) {
+    .kbn-home {
+        grid-template-rows: 2;
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .kbn-home .kbn-welcome {
+        padding: 20px;
+        grid-column: 1fr;
+        grid-row: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .kbn-home .kbn-welcome h1 {
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+
+    .kbn-home .kbn-welcome h4 {
+        font-size: 1.5rem;
+        padding-bottom: 16px;
+    }
+
+    .kbn-home .kbn-banner {
+        text-align: center;
+        padding: 20px;
+        grid-column: 1fr;
+        grid-row: 1;
+    }
+
+    .kbn-home .kbn-banner img {
+        text-align: center;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 780px) {
+    .kbn-home {
+        grid-template-rows: 2;
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .kbn-home .kbn-welcome {
+        padding: 20px;
+        grid-column: 1fr;
+        grid-row: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .kbn-home .kbn-welcome h1 {
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+
+    .kbn-home .kbn-welcome h4 {
+        font-size: 1.5rem;
+        padding-bottom: 16px;
+    }
+
+    .kbn-home .kbn-banner {
+        text-align: center;
+        padding: 20px;
+        grid-column: 1fr;
+        grid-row: 1;
+    }
+
+    .kbn-home .kbn-banner img {
+        text-align: center;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 980px) {
+    .kbn-home {
+        grid-template-rows: 1;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 20px;
+    }
+
+    .kbn-home .kbn-welcome {
+        padding: 20px;
+        width: 100%;
+        grid-column: 1;
+    }
+
+    .kbn-home .kbn-welcome h1 {
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: 3rem;
+    }
+
+    .kbn-home .kbn-welcome h4 {
+        font-size: 1.8rem;
+        padding-bottom: 16px;
+    }
+
+    .kbn-home .kbn-banner {
+        text-align: center;
+        padding: 20px;
+        grid-column: 2;
+    }
+
+    .kbn-home .kbn-banner img {
+        text-align: center;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .kbn-home {
+        grid-template-rows: 1;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 20px;
+    }
+
+    .kbn-home .kbn-welcome {
+        padding: 20px;
+        width: 100%;
+        grid-column: 1;
+    }
+
+    .kbn-home .kbn-welcome h1 {
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: 5rem;
+    }
+
+    .kbn-home .kbn-welcome h4 {
+        font-size: 2rem;
+        padding-bottom: 16px;
+    }
+
+    .kbn-home .kbn-banner {
+        text-align: center;
+        padding: 20px;
+        grid-column: 2;
+    }
+
+    .kbn-home .kbn-banner img {
+        text-align: center;
+        width: 80%;
+        height: 100%;
+    }
+}

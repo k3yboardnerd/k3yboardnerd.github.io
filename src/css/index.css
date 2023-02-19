@@ -1,0 +1,71 @@
+@import './kbn-header.css';
+@import './kbn-home.css';
+@import './kbn-about.css';
+@import './kbn-services.css';
+@import './kbn-projects.css';
+@import './kbn-contact.css';
+@import './kbn-footer.css';
+
+
+
+:root {
+    scroll-behavior: smooth;
+    /* Font Color */
+    --font-color: #FFFFFF;
+    --hover-font-color: #a3a3a3;
+
+    /* Font Family */
+    --font-family: arial,verdana,sans-serif;
+
+    /* Font Sizes */
+    --smaller-font-size: 12px;
+    --small-font-size: 14px;
+    --normal-font-size: 16px;
+    --large-font-size: 18px;
+    --larger-font-size: 24px;
+    --x-large-font-size: 30px;
+    --xx-large-font-size: 34px;
+
+    /* Font Weights */
+    --normal-font-weight: 200;
+    --bold-font-weight: 400;
+    --bolder-font-weight: 600;
+    --boldest-font-weight: 800;
+
+    /* App Colors */
+    --background-color: #000022;
+    --background-color-2: #000044;
+    --primary-color: #000066;
+    --secondary-color: #3333FF;
+    --hover-secondary-color: #3030da;
+    --accent-color: #33CCFF;
+    --hover-accent-color: #0a8f9e;
+
+    
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: var(--secondary-color);
+}
+
+body {
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.kbn-section-title {
+    text-align: center;
+    color: var(--accent-color);
+    font-size: var(--larger-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--boldest-font-weight);
+}

@@ -1,0 +1,182 @@
+
+
+.kbn-about {
+    background-color: #000011;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.kbn-about .kbn-about-banner {
+    grid-column: 1fr;
+    grid-row: span 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.kbn-about .kbn-about-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kbn-about .kbn-bio {
+    padding: 10px;
+    grid-column: 2 / span 2;
+}
+
+.kbn-about .kbn-bio h2 {
+    color: var(--font-color);
+    font-size: var(--larger-font-size);
+    font-weight: var(--bolder-font-weight);
+    font-family: var(--font-family);
+}
+
+.kbn-about .kbn-bio p {
+    white-space: normal;
+    color: var(--font-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--normal-font-weight);
+    font-family: var(--font-family);
+    padding: 8px;
+}
+.kbn-about .kbn-bio-details-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.kbn-about .kbn-bio-details-box .kbn-bio-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 240px;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.kbn-about .kbn-bio-details-box .kbn-bio-details h1 {
+    color: var(--font-color);
+    font-weight: var(--bolder-font-weight);
+    font-family: var(--font-family);
+    font-size: var(--larger-font-size);
+    padding-top: 10px;
+}
+
+.kbn-about .kbn-bio-details-box .kbn-bio-details span {
+    color: var(--hover-font-color);
+    font-family: var(--font-family);
+    font-size: var(--small-font-size);
+    font-weight: var(--normal-font-weight);
+}
+
+.kbn-about .kbn-bio-details-box .kbn-bio-details a {
+    color: var(--hover-font-color);
+    font-family: var(--font-family);
+    font-size: var(--small-font-size);
+    font-weight: var(--normal-font-weight);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (min-width: 240px) and (max-width: 380px) {
+    .kbn-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        gap: 5px;
+    }
+
+    .kbn-about .kbn-about-banner {
+        display: none;
+    }
+
+    .kbn-about .kbn-bio {
+        grid-row: 1;
+    }
+
+    .kbn-about .kbn-bio-details-box {
+        grid-row: 2;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .kbn-about .kbn-bio-details-box .kbn-bio-details {
+        width: 200px;
+        height: 180px;
+    }
+
+    .kbn-about .kbn-bio-details-box .kbn-bio-details h1 {
+        font-size: var(--large-font-size);
+        font-weight: var(--bold-font-weight);
+        padding-top: 5px;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 580px) {
+    .kbn-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        gap: 5px;
+    }
+
+    .kbn-about .kbn-about-banner {
+        display: none;
+    }
+
+    .kbn-about .kbn-bio {
+        grid-row: 1;
+    }
+
+    .kbn-about .kbn-bio-details-box {
+        grid-row: 2;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 780px) {
+    .kbn-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        gap: 5px;
+    }
+
+    .kbn-about .kbn-about-banner {
+        display: none;
+    }
+
+    .kbn-about .kbn-bio {
+        grid-row: 1;
+    }
+
+    .kbn-about .kbn-bio-details-box {
+        grid-row: 2;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+

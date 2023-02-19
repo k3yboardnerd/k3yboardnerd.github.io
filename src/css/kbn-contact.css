@@ -1,0 +1,252 @@
+
+
+.kbn-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* 
+ ************************************************************
+ * Contact Details
+ ************************************************************
+ */
+.kbn-contact .kbn-contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 10px;
+}
+
+.kbn-contact .kbn-contact-details h1 {
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--larger-font-size);
+    font-weight: var(--bolder-font-weight);
+    padding: 10px;
+}
+
+.kbn-contact .kbn-contact-details h1 i {
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+    font-size: var(--normal-font-size);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.kbn-contact .kbn-contact-details span {
+    color: var(--hover-font-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--normal-font-weight);
+    font-family: var(--font-family);
+    padding: 4px 20px;
+}
+
+.kbn-contact .kbn-contact-details a {
+    color: var(--hover-font-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--normal-font-weight);
+    font-family: var(--font-family);
+    padding: 4px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 
+ ************************************************************
+ * Contact Form
+ ************************************************************
+ */
+
+.kbn-contact .kbn-contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    align-items: center;
+    justify-content: center;
+    justify-items: left;
+    gap: 10px;
+    align-items: center;
+}
+
+.kbn-contact .kbn-contact-form .kbn-form-input, .kbn-contact .kbn-contact-form .kbn-form-message {
+    border: 1px solid transparent;
+    outline: none;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: white;
+    font-family: var(--font-family);
+    transition: 0.4s ease;
+    width: 100%;
+}
+
+.kbn-contact .kbn-contact-form .kbn-form-message {
+    grid-row: 2;
+    grid-column: span 2;
+    padding: 20px;
+}
+
+.kbn-contact .kbn-contact-form .kbn-form-input {
+    padding: 10px;
+}
+
+.kbn-contact .kbn-contact-form .kbn-form-input:focus, .kbn-contact .kbn-contact-form .kbn-form-message:focus {
+    border: 1px solid var(--secondary-color);
+}
+
+.kbn-contact .kbn-contact-form .kbn-form-input::placeholder, .kbn-contact .kbn-contact-form .kbn-form-message::placeholder {
+    color: var(--hover-font-color);
+}
+
+.kbn-contact .kbn-contact-form .kbn-form-btn {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--normal-font-size);
+    font-weight: var(--bolder-font-weight);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    width: 50%;
+}
+
+.kbn-contact .kbn-contact-form .kbn-form-btn:hover {
+    background-color: var(--hover-secondary-color);
+}
+
+
+/* 
+ ************************************************************
+ * Responsive
+ * Mobile
+ * Tablet
+ * Laptop
+ * Desktop
+ * TV
+ ************************************************************
+ */
+
+@media screen and (min-width: 240px) and (max-width: 380px) {
+    .kbn-contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        align-items: center;
+        justify-items: auto;
+        justify-content: left;
+    }
+
+    .kbn-contact .kbn-contact-details {
+        grid-row: 2;
+        align-items: left;
+        justify-content: left;
+        justify-items: left;
+        justify-self: left;
+        padding: 40px 10px;
+    }
+
+    .kbn-contact .kbn-contact-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .kbn-contact .kbn-contact-form .kbn-form-input {
+        width: 150px;
+    }
+
+    .kbn-contact .kbn-contact-details .kbn-form-message {
+        width: 200px;
+    }
+
+    .kbn-contact .kbn-contact-form .kbn-form-btn {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 580px) {
+    .kbn-contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        align-items: center;
+        justify-items: auto;
+        justify-content: left;
+    }
+
+    .kbn-contact .kbn-contact-details {
+        grid-row: 2;
+        align-items: left;
+        justify-content: left;
+        justify-items: left;
+        justify-self: left;
+        padding: 40px 10px;
+    }
+
+    .kbn-contact .kbn-contact-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 250px;
+        max-width: 400px;
+    }
+
+    .kbn-contact .kbn-contact-form .kbn-form-input {
+        width: 200px;
+    }
+
+    .kbn-contact .kbn-contact-details .kbn-form-message {
+        width: 250px;
+    }
+
+    .kbn-contact .kbn-contact-form .kbn-form-btn {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 880px) {
+    .kbn-contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        align-items: center;
+        justify-items: auto;
+        justify-content: left;
+    }
+
+    .kbn-contact .kbn-contact-details {
+        grid-row: 2;
+        align-items: left;
+        justify-content: left;
+        justify-items: left;
+        justify-self: left;
+        padding: 40px 10px;
+    }
+
+    .kbn-contact .kbn-contact-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 300px;
+        max-width: 400px;
+    }
+
+    .kbn-contact .kbn-contact-form .kbn-form-input {
+        width: 250px;
+    }
+
+    .kbn-contact .kbn-contact-details .kbn-form-message {
+        width: 300px;
+    }
+
+    .kbn-contact .kbn-contact-form .kbn-form-btn {
+        width: 50%;
+    }
+}
