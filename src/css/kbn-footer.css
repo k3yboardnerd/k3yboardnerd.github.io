@@ -31,22 +31,7 @@
     cursor: pointer;
 }
 
-.kbn-footer .kbn-socials a:nth-child(1) {
-    color: green;
-}
-.kbn-footer .kbn-socials a:nth-child(2) {
-    color: white;
-}
-.kbn-footer .kbn-socials a:nth-child(3) {
-    color: blue;
-}
-.kbn-footer .kbn-socials a:nth-child(4) {
-    color: purple;
-}
-.kbn-footer .kbn-socials a:nth-child(5) {
-    color: red;
-}
-.kbn-footer .kbn-socials a:nth-child(6) {
+.kbn-footer .kbn-socials a {
     color: white;
 }
 
