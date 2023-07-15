@@ -20,7 +20,7 @@
 }
 
 .kbn-header {
-    background-color: var(--background-color-2);
+    /* background-color: var(--background-color-2); */
     display: flex;
     justify-content: space-between;
     align-items: center;
